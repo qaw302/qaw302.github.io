@@ -69,6 +69,8 @@
 
 <link href="{{ site.css | relative_url }}/main.css?v={{ site.version }}" rel="stylesheet" type="text/css" />
 
+<link href="{{ '/assets/css/banner.css' | relative_url }}" rel="stylesheet" type="text/css" />
+
 {% if page.keywords %}
   <meta name="keywords" content="{{ page.keywords }}" />
 {% elsif page.tags and page.tags | size != 0 %}

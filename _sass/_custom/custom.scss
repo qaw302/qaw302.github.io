@@ -1,1 +1,33 @@
 // Custom styles.
+
+// Fix for developer card link color
+.developer-grid a,
+.developer-grid a:hover {
+  text-decoration: none;
+}
+
+.developer-grid a .card-title h3 {
+  color: #222; // Use a darker color for the heading
+}
+
+// Styles for 404 page centering
+.not-found-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 70vh;
+  background-color: #000;
+  color: #fff;
+}
+
+.not-found-container h1 {
+  font-size: 5rem;
+  color: #fff;
+  font-family: Impact, 'Arial Black', sans-serif;
+}
+
+.not-found-container>img {
+  max-width: 70%;
+}
