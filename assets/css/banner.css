@@ -1,121 +1,73 @@
+/* Styles for Developer Banner - Retro/Meme Theme */
+
 .developer-banner {
-    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-    padding: 60px 20px;
+    background-color: #000;
+    /* Black background */
+    padding: 40px 20px;
     text-align: center;
-    color: white;
-    margin-bottom: 0;
-    position: relative;
-    overflow: hidden;
-}
-
-.developer-banner::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.1);
-    background-image:
-        radial-gradient(circle at 25% 25%, rgba(255, 255, 255, 0.1) 2px, transparent 2px),
-        radial-gradient(circle at 75% 75%, rgba(255, 255, 255, 0.1) 2px, transparent 2px);
-    background-size: 100px 100px;
-}
-
-.developer-title {
-    position: relative;
-    z-index: 2;
-    margin-bottom: 40px;
 }
 
 .developer-title h1 {
-    font-size: 3.5rem;
-    font-weight: 900;
-    letter-spacing: 8px;
-    margin: 0;
-    background: linear-gradient(45deg, #fff, #e8e8e8);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
+    color: #fff;
+    /* White text */
+    font-family: Impact, 'Arial Black', sans-serif;
+    /* Retro/Meme font */
+    font-size: 5rem;
+    /* Large font size */
+    letter-spacing: 3px;
+    margin-bottom: 2rem;
 }
 
 .developer-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 50px;
     max-width: 1200px;
     margin: 0 auto;
-    position: relative;
-    z-index: 2;
+}
+
+.developer-grid a {
+    text-decoration: none;
+    border-bottom: none;
 }
 
 .developer-card {
     overflow: hidden;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    backdrop-filter: blur(10px);
 }
 
 .card-image {
     width: 100%;
-    height: 200px;
+    height: 300px;
     overflow: hidden;
-    position: relative;
 }
 
 .card-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.3s ease;
-    filter: grayscale(20%) contrast(1.1);
 }
 
 .card-title {
-    padding: 20px;
-    /* background: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(5px); */
+    padding: 10px;
 }
 
 .card-title h3 {
-    font-size: 1.1rem;
-    font-weight: 700;
+    color: #fff;
+    /* White text */
+    font-family: Impact, 'Arial Black', sans-serif;
+    /* Retro/Meme font */
+    font-size: 1.5rem;
     letter-spacing: 2px;
     margin: 0;
 }
 
-/* 반응형 디자인 */
+/* Responsive Design */
 @media (max-width: 768px) {
-    .developer-banner {
-        padding: 40px 15px;
-    }
-
     .developer-title h1 {
-        font-size: 2.5rem;
-        letter-spacing: 4px;
+        font-size: 3.5rem;
     }
 
     .developer-grid {
         grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    .card-image {
-        height: 180px;
-    }
-
-    .card-title h3 {
-        font-size: 1rem;
-        letter-spacing: 1px;
-    }
-}
-
-@media (max-width: 480px) {
-    .developer-title h1 {
-        font-size: 2rem;
-        letter-spacing: 2px;
-    }
-
-    .card-image {
-        height: 150px;
     }
 }
