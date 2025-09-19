@@ -3,8 +3,9 @@ title: 드디어 깃허브 블로그 개설
 description: 깃허브 블로그 첫 개설 회고
 date: 2025-09-13 
 categories:
-- 블로그
+- 회고
 tags:
+- think
 - 블로그
 ---
 
